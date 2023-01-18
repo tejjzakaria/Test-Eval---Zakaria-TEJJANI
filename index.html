@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <script src="assets/js/facture.js"></script>
+        <script src="assets/js/print_bon_de_commande.js"></script>
+        <script src="assets/js/slideshow.js"></script>
+
+        <title>SHOPY</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">SHOPY</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                        <li class="nav__item"><a href="#produits" class="nav__link">Produits</a></li>
+                        <li class="nav__item"><a href="#facture" class="nav__link">Facture</a></li>
+                        <li class="nav__item"><a href="#bcommande" class="nav__link">Bon De Commande</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="slideshow">
+                    <center>
+                        <img id="image1" src="files/image2.png" alt="" name="slide">
+                    </center>
+                </div>
+            </section>
+
+            <!--===== PRODUITS =====-->
+            <section class="work section" id="produits">
+                <h2 class="section-title">Produits</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="files/produit11.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="files/produit22.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="files/produit33.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="files/produit44.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="files/produit55.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="files/produit66.png" alt="">
+                    </a>
+                </div>
+            </section>
+            <!--===== Facture =====-->
+            <section class="skills section" id="facture">
+                <h2 class="section-title">Facture</h2>
+        <center>
+            <table>
+                <tr>
+                    <th id="refSociete">Réf Société</th>
+                    <th>Doit :</th>
+                    <th>Réf Client</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nFacture">N° Facture</label>
+                        <input type="number" name="nFacture" id="nFacture">
+                    </td>
+                    <td></td>
+                    <td>
+                        <label for="dFacture">Date Facture</label>
+                        <input type="date" name="dFacture" id="dFacture">
+                    </td>
+                </tr>
+            </table>
+            <table id="secondTable">
+                <tr>
+                    <th>Référence</th>
+                    <th>Désignation</th>
+                    <th>Prix Unitaire HT</th>
+                    <th>Quantité</th>
+                    <th>Montant</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix1" id="prix1"></td>
+                    <td><input type="number" name="qte1" id="qte1"></td>
+                    <td id="montant1"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix2" id="prix2"></td>
+                    <td><input type="number" name="qte2" id="qte2"></td>
+                    <td id="montant2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix3" id="prix3"></td>
+                    <td><input type="number" name="qte3" id="qte3"></td>
+                    <td id="montant3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix4" id="prix4"></td>
+                    <td><input type="number" name="qte4" id="qte4"></td>
+                    <td id="montant4"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix5" id="prix5"></td>
+                    <td><input type="number" name="qte5" id="qte5"></td>
+                    <td id="montant5"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix6" id="prix6"></td>
+                    <td><input type="number" name="qte6" id="qte6"></td>
+                    <td id="montant6"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ref" id="ref"></td>
+                    <td><input type="text" name="designation" id="designation"></td>
+                    <td><input type="number" name="prix7" id="prix7"></td>
+                    <td><input type="number" name="qte7" id="qte7"></td>
+                    <td id="montant7"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Brut HT</td>
+                    <td id="brutht"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Remise 5%</td>
+                    <td id="rem"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Net Commercial HT</td>
+                    <td id="netcom"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Escompte 2%</td>
+                    <td id="escompte"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Net financier</td>
+                    <td id="netfin"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Port forfaitaire</td>
+                    <td id="portfor"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Net HT</td>
+                    <td id="netht"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>TVA 19%</td>
+                    <td id="tva"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td>Net a payer TTC</td>
+                    <td id="netpaie"></td>
+                </tr>
+                <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td><button id="calculBtn" onclick="calculFacture()">Calculer</button></td>
+                </tr>
+            </table>
+        </center>
+            </section>
+        
+        <section id="bcommande">
+            <h2 class="section-title">Bon de commande</h2>
+            <form action="" id="myfrm">
+                
+                <center>
+                    <div class="containerInputs">
+                        <input type="number" name="nCommande" id="nCommande" placeholder="Entrez le numéro de la commande"><br>
+                    </div>
+                    <div class="containerInputs">
+                    
+                        <input type="date" name="dCommande" id="dCommande" placeholder="Entrez la date de la commande"><br>
+                    </div>
+                    <div class="containerInputs">
+                        <input type="number" name="qteCommande" id="qteCommande" placeholder="Entrez la quantité de la commande"><br>
+                    </div>
+                    <div class="containerInputs">
+                        <input type="date" name="dLivraison" id="dLivraison" placeholder="Entrez la date de la livraison"><br>
+                    </div>
+                </center>   
+                        
+                    
+                
+            </form>
+                <center>
+                    <input type="submit" name="printBtn" id="printBtn" value="Imprimer" onclick="myPrint('myfrm');">
+                </center>
+            
+            </section>
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Envoyer" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">SHOPY</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">Tous les droits sont résérvés</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
